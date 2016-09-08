@@ -25,8 +25,5 @@ public class StupidController
 		System.out.println("How is your day?");
 		String input = inputReader.nextLine();
 		System.out.println("You're having a " + input + " day.");
-//		if (input == "bad"); {
-//			System.out.println("I'm sorry!");
-//		} else if 
 	}
 }

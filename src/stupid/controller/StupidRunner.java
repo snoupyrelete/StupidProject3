@@ -6,6 +6,6 @@ public class StupidRunner
 	{
 		StupidController firstAppController = new StupidController(); // Constructor call
 																	
-		firstAppController.start(); // Method call
+		firstAppController.start(); // Method call on an instance
 	}
 }
