@@ -16,7 +16,7 @@ public class StupidController
 	public void start() // Methods
 	{
 		System.out.println("This program is slightly less stupid.");
-		System.out.println("My name is " + myName);
+		System.out.println("My name is " + myName + "\n");
 		askQuestions();
 	}
 	
@@ -38,10 +38,12 @@ public class StupidController
 		System.out.println("How old are you?");
 		int ageInput = inputReader.nextInt();
 		System.out.println("You said that you are " + ageInput + " years old.\n");
+		inputReader.nextLine();
 		
 		System.out.println("How hot are you out of 10 as a decimal?");
 		float hotnessInput = inputReader.nextFloat();
 		System.out.println("You're an " + hotnessInput + " out of 10!.\n");
+		inputReader.nextLine();
 		
 		System.out.println("What are your physical attributes?");
 		String physicalInput = inputReader.nextLine();
@@ -54,6 +56,7 @@ public class StupidController
 		System.out.println("What size shoe do you wear?");
 		float shoeInput = inputReader.nextFloat();
 		System.out.println("You said that you wear a shoe size of: " + shoeInput + "\n");
+		inputReader.nextLine();
 		
 		System.out.println("What is your first name?");
 		String nameInput = inputReader.next();
@@ -61,8 +64,7 @@ public class StupidController
 		inputReader.nextLine();
 		
 		System.out.println("What is the best brand of car?");
-		String carInput = inputReader.next();
+		String carInput = inputReader.nextLine();
 		System.out.println("You said that " + carInput + " is the best type of car.\n");
-	
 	}
 }
