@@ -33,7 +33,7 @@ public class StupidController
 		System.out.println("What is your favorite color?");
 		String colorInput = inputReader.next();
 		System.out.println("You said that " + colorInput + " is your favorite color.\n");
-		inputReader.nextLine();
+		inputReader.nextLine(); // Ignore unessential potential data
 	
 		System.out.println("How old are you?");
 		int ageInput = inputReader.nextInt();
@@ -42,9 +42,14 @@ public class StupidController
 		
 		System.out.println("How hot are you out of 10 as a decimal?");
 		float hotnessInput = inputReader.nextFloat();
-		System.out.println("You're an " + hotnessInput + " out of 10!.\n");
-		inputReader.nextLine();
-		
+		if (hotnessInput == 10)
+		{
+			System.out.println("You're hot!\n");
+		} else {
+			System.out.println("You're ugly \n");
+			inputReader.nextLine();
+		}
+	
 		System.out.println("What are your physical attributes?");
 		String physicalInput = inputReader.nextLine();
 		System.out.println("You said that you are " + physicalInput + "\n");
