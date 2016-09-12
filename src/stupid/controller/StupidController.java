@@ -24,43 +24,45 @@ public class StupidController
 	{
 		System.out.println("How is your day?");
 		String dayInput = inputReader.nextLine();
-		System.out.println("You're having a " + dayInput + " day.");
+		System.out.println("You're having a " + dayInput + " day.\n");
 		
 		System.out.println("What is the best type of food?");
 		String foodInput = inputReader.nextLine();
-		System.out.println("You said that " + foodInput + " is the best type of food.");
+		System.out.println("You said that " + foodInput + " is the best type of food.\n");
 		
 		System.out.println("What is your favorite color?");
 		String colorInput = inputReader.next();
-		System.out.println("You said that " + colorInput + " is your favorite color.");
+		System.out.println("You said that " + colorInput + " is your favorite color.\n");
+		inputReader.nextLine();
 	
 		System.out.println("How old are you?");
 		int ageInput = inputReader.nextInt();
-		System.out.println("You said that you are " + ageInput + " years old.");
+		System.out.println("You said that you are " + ageInput + " years old.\n");
 		
 		System.out.println("How hot are you out of 10 as a decimal?");
 		float hotnessInput = inputReader.nextFloat();
-		System.out.println("You're an " + hotnessInput + " out of 10!.");
+		System.out.println("You're an " + hotnessInput + " out of 10!.\n");
 		
 		System.out.println("What are your physical attributes?");
 		String physicalInput = inputReader.nextLine();
-		System.out.println("You said that you are " + physicalInput);
+		System.out.println("You said that you are " + physicalInput + "\n");
 	
-		System.out.println("What is your favorite activity to do?");
+		System.out.println("What is your favorite activity to do?\n");
 		String activityInput = inputReader.nextLine();
-		System.out.println("You said that your favorite activity is " + activityInput);
+		System.out.println("You said that your favorite activity is " + activityInput + "\n");
 		
 		System.out.println("What size shoe do you wear?");
 		float shoeInput = inputReader.nextFloat();
-		System.out.println("You said that you wear a shoe size of: " + shoeInput);
+		System.out.println("You said that you wear a shoe size of: " + shoeInput + "\n");
 		
 		System.out.println("What is your first name?");
 		String nameInput = inputReader.next();
-		System.out.println("Your name is: " + nameInput);
+		System.out.println("Your name is: " + nameInput + "\n");
+		inputReader.nextLine();
 		
 		System.out.println("What is the best brand of car?");
 		String carInput = inputReader.next();
-		System.out.println("You said that " + carInput + " is the best type of car.");
+		System.out.println("You said that " + carInput + " is the best type of car.\n");
 	
 	}
 }
